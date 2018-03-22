@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	width: 240px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	transition: all ease-in-out 200ms;
+	-webkit-transition: all ease-in-out 200ms; /* webkit for all browser*/
+}
