@@ -6,12 +6,32 @@
 </head>
 <body>
 
+	<div id="toggleMenu" onclick="toggleMenu()"></div>
+
 	<nav id="menu">
 		<img src="img/logo.png">
 		<ul>
-			<li></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Cases</a></li>
+			<li><a href="#">Personal projects</a></li>
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Contact</a></li>
 		</ul>
 	</nav>
+
+	<script type="text/javascript">
+		var toggleStatus = 1;
+
+		function toggleMenu(){
+			if (toggleStatus == 1) {
+				document.getElementById("menu").style.left = "-240px"
+				toggleStatus = 0;
+			} else if (toggleStatus == 0){
+				document.getElementById("menu").style.left = "0"
+				toggleStatus = 1;
+			}
+		}
+	</script>
 
 </body>
 </html>

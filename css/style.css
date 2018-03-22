@@ -1,6 +1,11 @@
 *{
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+}
+
+body{
+	background-color: #272727;
 }
 
 nav{
@@ -13,4 +18,48 @@ nav{
 	z-index: 1000;
 	transition: all ease-in-out 200ms;
 	-webkit-transition: all ease-in-out 200ms; /* webkit for all browser*/
+}
+
+nav img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+nav ul{
+	padding-left: 30px;
+	padding-top: 60px;
+}
+nav ul li{
+	list-style: none;
+	padding: 4px 0px;
+}
+nav ul li a{
+	font-family: Arial;
+	font-weight: 300;
+	color: #272727;
+	text-transform: uppercase;
+}
+
+/*ToggleMenu*/
+#toggleMenu{
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	background-image: url("../img/close.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	cursor: pointer;
+	border: 10px solid #fff;
+	border-radius: 2px;
+	transition: all ease-in-out 200ms;
+	-webkit-transition: all ease-in-out 200ms; /* webkit for all browser*/
+}
+#toggleMenu:hover{
+	opacity: 0.7;
 }
